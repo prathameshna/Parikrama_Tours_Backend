@@ -66,7 +66,7 @@ exports.aliasTopTours = async (req, res, next) => {
   req.query.limit = '6';
   req.query.sort = 'price,-ratingsAverage';
   req.query.fields =
-    'name,price,ratingsAverage,price,summary,difficulty,imageCover,startLocation,startDates,locations,maxGroupSize';
+    'name,price,ratingsAverage,price,summary,difficulty,imageCover,startLocation,startDates,locations,maxGroupSize,duration';
   next();
 };
 
